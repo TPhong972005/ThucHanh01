@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(192, 49%, 66%);
+      justify-content: center;
+      display: flex ;
+      align-items: center;
+      height: 100vh;
+    }
+    .feedback-form {
+      background-color: white;
+      padding: 100px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 ;
+    }
+    .feedback-form h2 {
+      text-align: center;
+    }
+    .feedback-form input, .feedback-form textarea, .feedback-form select {
+      width: 100%;
+      margin: 30px 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .feedback-form input[type="submit"] {
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .feedback-form input[type="submit"]:hover {
+      background-color: hsl(303, 100%, 27%);
+    }
+  </style>
+  </style>
+</head>
+<body>
+     <form class="feedback-form">
+   <h2>Gửi phản hồi</h2>
+
+    <label for="email">Email của bạn:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+    <label for="rating">Đánh giá (1–5 sao):</label>
+    <select id="rating" name="rating" required>
+      <option value="">--Chọn sao--</option>
+      <option value="1">★☆☆☆☆ (1 sao)</option>
+      <option value="2">★★☆☆☆ (2 sao)</option>
+      <option value="3">★★★☆☆ (3 sao)</option>
+      <option value="4">★★★★☆ (4 sao)</option>
+      <option value="5">★★★★★ (5 sao)</option>
+    </select>
+
+    <label for="comment">Ý kiến phản hồi:</label>
+    <textarea id="comment" name="comment" rows="4" placeholder="Nhập ý kiến của bạn..." required></textarea>
+
+    <input type="submit" value="Gửi phản hồi">
+    </form> 
+</body>
+</html>
