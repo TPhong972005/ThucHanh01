@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <form class="survey-form" >
+    <h2>Khảo sát ý kiến người dùng</h2>
+    <div class="form-group">
+      <label>1. Bạn hài lòng với dịch vụ của chúng tôi không?</label>
+      <input type="radio" name="satisfaction" value="Hài lòng" required> Hài lòng<br>
+      <input type="radio" name="satisfaction" value="Bình thường"> Bình thường<br>
+      <input type="radio" name="satisfaction" value="Không hài lòng"> Không hài lòng
+    </div>
+    <div class="form-group">
+      <label>2. Bạn quan tâm đến những tính năng nào? (chọn nhiều)</label>
+      <input type="checkbox" name="features[]" value="Giao diện đẹp"> Giao diện đẹp<br>
+      <input type="checkbox" name="features[]" value="Tốc độ nhanh"> Tốc độ nhanh<br>
+      <input type="checkbox" name="features[]" value="Bảo mật cao"> Bảo mật cao<br>
+      <input type="checkbox" name="features[]" value="Hỗ trợ 24/7"> Hỗ trợ 24/7
+    </div>
+    <div class="form-group">
+      <label>3. Bạn biết đến chúng tôi qua đâu?</label>
+      <select name="source" required>
+        <option value="">--Chọn nguồn--</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Google">Google</option>
+        <option value="Bạn bè giới thiệu">Bạn bè giới thiệu</option>
+        <option value="Khác">Khác</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>4. Ý kiến góp ý khác (nếu có):</label>
+      <textarea name="comments" rows="4" placeholder="Nhập góp ý của bạn..."></textarea>
+    </div>
+
+    <input type="submit" value="Gửi khảo sát">
+  </form>
+</body>
+</html>
